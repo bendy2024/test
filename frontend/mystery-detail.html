@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <head>
+        <title>Mysteru - TOA</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/jquery-ui.css">
+        <link rel="stylesheet" href="css/swiper-bundle.min.css"/>
+        <link rel="stylesheet" href="css/jstarbox.css"/>
+        <link rel="stylesheet" href="css/common.css">
+        
+        <script src="js/jquery-3.7.0.min.js"></script>
+        <script src="js/jquery-ui.js"></script>
+        <script src="js/swiper-bundle.min.js"></script>
+        <script src="js/jquery.ui.touch-punch.min.js"></script>
+        <script src="js/jstarbox.js"></script>
+        <script src="js/detail.js"></script>
+    </head>
+    <body class="bg-btm pos-relative">
+        <div class="w-90 auto-0 mt-4">
+            <div class="title-box text-center">
+                <div class="pos-relative">
+                    <a class="right-arrow" href="javascript:void(0)"></a>
+                    <p class="welcome white">歡迎：<span id="name"></span></p>
+                </div>
+                <div>
+                    <p class="color-p font0875">請你對本餐廳提出寶貴意見！</p>
+                </div>
+            </div>
+            <div class="op-box">
+                <p class="sub-title">外觀</p>
+                <div class="op-outer">
+                    <div class="d-flex just-between item-start mt10 mb-175">
+                        <p>環境及氣氛</p>
+                        <div class="w-60">
+                            <div id="slider1" data-name="outlook1" class="slider "></div>
+                            <div class="mt15 remark d-flex font0875 just-between">
+                                <span>差</span>
+                                <span>正常</span>
+                                <span>好</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex just-between item-start mt10 mb-175">
+                        <p>餐廳整潔度</p>
+                        <div class="w-60">
+                            <div id="slider2" data-name="outlook2" class="slider"></div>
+                            <div class="mt15 remark d-flex font0875 just-between">
+                                <span>差</span>
+                                <span>正常</span>
+                                <span>好</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex just-between item-start mt10 mb-175">
+                        <p>座位舒適度</p>
+                        <div class="w-60">
+                            <div id="slider3" data-name="outlook3" class="slider"></div>
+                            <div class="mt15 remark d-flex font0875 just-between">
+                                <span>差</span>
+                                <span>正常</span>
+                                <span>好</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="op-box">
+                <p class="sub-title">等位</p>
+                <div class="op-outer">
+                    <div class="d-flex just-between item-start mt10 mb-175">
+                        <p>排隊系統操作</p>
+                        <div class="w-60">
+                            <div id="slider4" data-name="waiting1" class="slider"></div>
+                            <div class="mt15 remark d-flex font0875 just-between">
+                                <span>差</span>
+                                <span>正常</span>
+                                <span>好</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex just-between item-start mt10 mb-175">
+                        <p>等位時間</p>
+                        <div class="w-60">
+                            <div id="slider5" data-name="waiting2" class="slider"></div>
+                            <div class="mt15 remark d-flex font0875 just-between">
+                                <span>差</span>
+                                <span>正常</span>
+                                <span>好</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="op-box">
+                <p class="sub-title">點餐</p>
+                <div class="op-outer">
+                    <div class="d-flex just-between item-start mt10 mb-175">
+                        <p>點餐系統操作</p>
+                        <div class="w-60">
+                            <div id="slider6" data-name="ordering1" class="slider"></div>
+                            <div class="mt15 remark d-flex font0875 just-between">
+                                <span>困難</span>
+                                <span>正常</span>
+                                <span>容易</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex just-between item-start mt10 mb-175">
+                        <p>餐牌展示</p>
+                        <div class="w-60">
+                            <div id="slider7" data-name="ordering2" class="slider"></div>
+                            <div class="mt15 remark d-flex font0875 just-between">
+                                <span>複雜</span>
+                                <span>正常</span>
+                                <span>清楚</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex just-between item-start mt10 mb-175">
+                        <p>食品等候時間</p>
+                        <div class="w-60">
+                            <div id="slider8" data-name="ordering3" class="slider"></div>
+                            <div class="mt15 remark d-flex font0875 just-between">
+                                <span>長</span>
+                                <span>正常</span>
+                                <span>短</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="op-box">
+                <p class="sub-title">服務</p>
+                <div class="op-outer">
+                    <div class="d-flex just-between item-start mt10 mb-175">
+                        <p>服務員態度</p>
+                        <div class="w-60">
+                            <div id="slider9" data-name="service1" class="slider"></div>
+                            <div class="mt15 remark d-flex font0875 just-between">
+                                <span>差</span>
+                                <span>正常</span>
+                                <span>好</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex just-between item-start mt10 mb-175">
+                        <p>服務員穿著</p>
+                        <div class="w-60">
+                            <div id="slider10" data-name="service2" class="slider"></div>
+                            <div class="mt15 remark d-flex font0875 just-between">
+                                <span>差</span>
+                                <span>正常</span>
+                                <span>好</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex just-between item-start mt10 mb-175">
+                        <p>有效處理問題</p>
+                        <div class="w-60">
+                            <div id="slider11" data-name="service3" class="slider"></div>
+                            <div class="mt15 remark d-flex font0875 just-between">
+                                <span>差</span>
+                                <span>正常</span>
+                                <span>好</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="op-box">
+                <p class="sub-title">餐點品質</p>
+                <div class="op-outer">
+                    <div class="d-flex just-between item-start mt10 mb-175">
+                        <p>味道</p>
+                        <div class="w-60">
+                            <div id="slider12" data-name="qunility1" class="slider"></div>
+                            <div class="mt15 remark d-flex font0875 just-between">
+                                <span>差</span>
+                                <span>正常</span>
+                                <span>好</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex just-between item-start mt10 mb-175">
+                        <p>口感</p>
+                        <div class="w-60">
+                            <div id="slider13" data-name="qunility2" class="slider"></div>
+                            <div class="mt15 remark d-flex font0875 just-between">
+                                <span>差</span>
+                                <span>正常</span>
+                                <span>好</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex just-between item-start mt10 mb-175">
+                        <p>溫度</p>
+                        <div class="w-60">
+                            <div id="slider14" data-name="qunility3" class="slider"></div>
+                            <div class="mt15 remark d-flex font0875 just-between">
+                                <span>差</span>
+                                <span>正常</span>
+                                <span>好</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="op-box">
+                <p class="sub-title">價值</p>
+                <div class="op-outer">
+                    <div class="d-flex just-between item-start mt10 mb-175">
+                        <p>餐點價格</p>
+                        <div class="w-60">
+                            <div id="slider15" data-name="value1" class="slider"></div>
+                            <div class="mt15 remark d-flex font0875 just-between">
+                                <span>差</span>
+                                <span>正常</span>
+                                <span>好</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex just-between item-start mt10 mb-175">
+                        <p>餐點品質</p>
+                        <div class="w-60">
+                            <div id="slider16" data-name="value2" class="slider"></div>
+                            <div class="mt15 remark d-flex font0875 just-between">
+                                <span>差</span>
+                                <span>正常</span>
+                                <span>好</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="op-box final">
+                <p class="sub-title">總覽</p>
+                <div class="op-outer">
+                    <div class="mt10 mb-175">
+                        <p>上傳影片/ 照片<span class="span">(每個檔案大小不能大於40MB)</span></p>
+                        <div class="w-100 d-flex just-center item-center mt10">
+                            <!--swiper slide-->
+                            <div class="w-33">
+                                <a herf="javascript:void(0)" class="uploadBtn"><img src="img/upload.png"></a>
+                                <input accept="image/*, video/*" type="file" id="imgInp" multiple/>
+                            </div>
+                            <div class="w-67">
+                                <div class="swiper">
+                                    <div class="swiper-wrapper">
+                                        <!-- <div class="swiper-slide bg-swiper">
+                                            <img src="img/looper_bg.png">
+                                        </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex just-between item-start mt10 mb-175">
+                        <p>你給餐廳評語</p>
+                        <div class="w-60">
+                            <textarea rows="5"></textarea>
+                        </div>
+                    </div>
+                    <div class="d-flex just-between item-start mt10 mb-175">
+                        <p>你給餐廳評價</p>
+                        <div class="w-60">
+                            <!-- <div class="star ghosting autoupdate"></div> -->
+                            <div class="rating-box">
+                                <div class="rating d-flex just-between">
+                                    <span class="fa fa-star-o" ></span>
+                                    <span class="fa fa-star-o" ></span>
+                                    <span class="fa fa-star-o" ></span>
+                                    <span class="fa fa-star-o" ></span>
+                                    <span class="fa fa-star-o" ></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-2 mb-6">
+                <a id="subBtn" href="javascript:void(0)">遞交意見</a>
+            </div>
+        </div>
+    </body>
+    <div class="modal">
+        <div class="d-flex item-center just-center h-100 w-100">
+            檔案上傳中，請勿關閉本頁面。
+        </div>
+    </div>
+    <div class="pic-modal">
+        <div class="closeBtn"></div>
+        <video controls="true" muted class="preview" src=""></video>
+        <img class="preview" src=""/>
+    </div>
+</html>

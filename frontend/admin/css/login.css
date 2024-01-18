@@ -1,0 +1,4 @@
+input#name::placeholder,
+input#password::placeholder {
+    color: #FFF;
+}

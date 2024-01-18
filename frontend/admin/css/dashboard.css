@@ -1,0 +1,51 @@
+body {
+    max-width: 1400px;
+    background-image: none;
+}
+
+.logo-box img {
+    max-width:200px;
+}
+
+.wrapper {
+    width: 100%;
+    color: #fff;
+}
+
+.row {
+    border: 1px solid #FFF;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0.5rem;
+    cursor: pointer;
+}
+
+.header1 {
+    width: 30%;
+}
+.header2 {
+    width: 20%;
+}
+.header3 {
+    width: 25%;
+}
+.header4 {
+    width: 25%;
+}
+
+#clone {
+    display: none;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .header1, .header2,
+    .header3, .header4 {
+        width: 50%;
+    }
+    .header2, .header4 {
+        margin-bottom: 0.75rem;
+    }
+}

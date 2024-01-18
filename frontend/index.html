@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<head>
+  <title>Mystery - TOA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/jquery-ui.css">
+  <link rel="stylesheet" href="css/common.css">
+  <script src="js/jquery-3.7.0.min.js"></script>
+  <script src="js/common.js"></script>
+</head>
+<body>
+    <div class="w-63 auto-0 mt-3">
+        <div class="logo-box">
+            <img src="img/Group 9.png" alt="Logo">
+            <img src="img/Mystery.png" alt="Mystery">
+
+        </div>
+        <div class="mt-2 d-flex just-center">
+            <select id='brand'>
+                <option value="">餐廳品牌</option>
+            </select>
+            <select id='resturtant' disabled>
+                <option value="">分店所屬地區</option>
+            </select>
+        </div>
+        <div class="input-box">
+            <div class="d-flex">
+                <input id="name" name="name" placeholder="輸入你的名字">
+            </div>
+            <div class="d-flex">
+                <input id="tel" name="tel" placeholder="你的聯絡電話">
+            </div>
+
+        </div>
+        <div class="text-center mt-2">
+            <a id="logBtn" href="javascript:void(0)">下一步</a>
+        </div>
+    </div>
+</body>
+<footer class="pt-10">
+    <div>
+        <p>到訪時間: <span id="time"></span></p>
+        <a>更改時間 ></a>
+    </div>
+</footer>
+</html>

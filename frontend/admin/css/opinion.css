@@ -1,0 +1,131 @@
+body {
+    /* max-width: 1400px; */
+    background-image: none;
+    line-height:1.5rem
+}
+
+.logo-box img {
+    max-width:200px;
+}
+
+.wrapper {
+    width: 100%;
+    color: #fff;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+}
+
+.row:first-of-type {
+    border-top: 0;
+    border-left: 0;
+}
+
+.row:first-of-type .mark {
+    border-top: 1px solid #FFF;
+    border-left: 1px solid #FFF;
+}
+
+.none,
+.mark,
+.item {
+    width: 50%;
+    padding: 1rem 2rem;
+    box-sizing: border-box;
+    border: 1px solid #FFF;
+}
+
+.none {
+    border: 0;
+}
+
+.image-wrapper a {
+    display: block;
+    width: 25%;
+    padding: 0.5rem;
+}
+
+.image-wrapper a img,
+.image-wrapper a video {
+    width: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+.pic-modal img.preview {
+    width: 50%;
+}
+
+.info {
+    margin-top: 1rem;
+}
+
+
+.info:first-of-type {
+    margin-top: 0;
+}
+
+.info p {
+    width: 40%;
+}
+
+.box {
+    margin-top: 1rem;
+    border: 1px solid #FFF;
+    padding: 1rem;
+}
+
+.title,
+.title2 {
+    margin: 2rem 0 1rem;
+    color: #A182FF;
+    font-size:1.5rem
+}
+
+.closeBtn::before,
+.closeBtn::after{
+    top:7.5px;
+    left: 0.5px;
+}
+
+.summary .row {
+    border: 1px solid #FFF;
+}
+
+.row1 {
+    justify-content: flex-start;
+    padding: 1rem 2rem;
+}
+
+.image-wrapper {
+    padding-bottom: 1rem
+}
+
+.comment {
+    margin-top: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+      font-size: 1rem;
+    }
+    .item,
+    .mark {
+        border: 0;
+    }
+    .row {
+        border: 1px solid #FFF;
+    }
+    .mark {
+        border-left: 1px solid #FFF;
+    }
+    .row.row1 div {
+        width: 100%;
+
+    }
+  }

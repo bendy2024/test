@@ -1,0 +1,22 @@
+version: '3.7'
+
+services:
+  app:
+    build:
+      context: . 
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    restart: unless-stopped
+    #environment: 
+      #MSSQL_HOSTNAME: 192.168.1.250
+      #MSSQL_INSTANCE: toag
+      #MSSQL_USERNAME: parser
+      #MSSQL_PASSWORD: KjJcwhmGtqN45aI
+      #MSSQL_DATABASE_NAME: TOAGERPDB
+      #JWT_SECRET: jsdalkfj8w3j4ioj$#@(#*JFLSkjfdsa90543)
+    networks: 
+      - backend
+
+networks:
+  backend:    
